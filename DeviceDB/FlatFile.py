@@ -45,15 +45,10 @@ class Database:
             record.to_csv('database.csv', mode='a', header=False, index=False)
             return Database.update()
     
+    @staticmethod
     def delete(frame, index):
         return frame.drop(index)
 
-
-if __name__ == '__main__':
-    db_frame = Database.update()
-    record = ("NAME", "IP ADDRESS")
-    db_frame = Database.create(db_frame, record)
-    print(db_frame)
-
-
-
+    @staticmethod
+    def alter(frame, old_record, new_record):
+        return frame.replace(old_record, new_record)
