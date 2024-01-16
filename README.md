@@ -1,5 +1,6 @@
 # **Homelab-Tools**
- *Misc tools for various homelab server devices*
+ *Misc tools for various homelab server devices*\
+ This is esentially a virtual journal of programming projects I work on
 
 
 ## **1. DeviceDB**
